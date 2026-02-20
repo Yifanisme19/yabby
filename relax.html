@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Relax Your Eyes</title>
+  <link rel="stylesheet" href="relax.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="heading">宝贝，休息一下眼睛吧 🤍</h1>
+    
+    <div class="timer-display">
+      <div class="timer-circle">
+        <svg class="progress-ring" width="200" height="200">
+          <circle class="progress-ring__circle-bg" stroke="black" stroke-width="12" fill="transparent" r="90" cx="100" cy="100"/>
+          <circle class="progress-ring__circle" stroke="black" stroke-width="12" fill="transparent" r="90" cx="100" cy="100"/>
+        </svg>
+        <div class="timer-content">
+          <span class="timer-value" id="break-timer">20s</span>
+        </div>
+      </div>
+    </div>
+
+    <p class="subtitle">LOOK AT SOMETHING 20 FEET AWAY.</p>
+
+    <div class="panda-illustration">
+      <img src="relax_panda.png" alt="Relaxing panda illustration">
+    </div>
+
+    <button id="done-btn" class="btn btn-massive">休息好了</button>
+  </div>
+  <script src="relax.js"></script>
+</body>
+</html>

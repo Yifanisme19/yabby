@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Yabby - Eye Relaxation Reminder",
+  "version": "1.0",
+  "description": "Helps users follow the 20-20-20 eye relaxation rule with a Neo-Brutalist design.",
+  "permissions": [
+    "storage",
+    "tabs",
+    "alarms",
+    "notifications"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "panda_icon.png",
+      "32": "panda_icon.png",
+      "48": "panda_icon.png",
+      "128": "panda_icon.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "panda_icon.png",
+    "32": "panda_icon.png",
+    "48": "panda_icon.png",
+    "128": "panda_icon.png"
+  }
+}

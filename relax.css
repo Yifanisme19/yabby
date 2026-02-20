@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+:root {
+  --color-bg: #F7F8F2;
+  --color-text: #000000;
+  --border-width: 4px;
+  --shadow-offset: 6px;
+  --font-main: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-main);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 600px;
+  padding: 40px;
+  border: var(--border-width) solid var(--color-text);
+  box-shadow: var(--shadow-offset) var(--shadow-offset) 0px var(--color-text);
+  background: var(--color-bg);
+}
+
+.heading {
+  font-size: 48px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0 0 40px 0;
+  line-height: 1;
+}
+
+.timer-display {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.timer-circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.progress-ring {
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+.progress-ring__circle-bg {
+  stroke: #e0e0e0;
+}
+
+.progress-ring__circle {
+  stroke: var(--color-text);
+  stroke-dasharray: 565.48; /* 2 * PI * 90 */
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 0.1s linear;
+}
+
+.timer-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.timer-value {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+.panda-illustration {
+  margin-bottom: 40px;
+}
+
+.panda-illustration img {
+  width: 160px;
+  max-width: 40vw;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn-massive {
+  background: var(--color-text);
+  color: var(--color-bg);
+  border: none;
+  font-family: var(--font-main);
+  font-weight: 900;
+  font-size: 24px;
+  padding: 20px 60px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: var(--shadow-offset) var(--shadow-offset) 0px rgba(0,0,0,0.5);
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.btn-massive:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0px rgba(0,0,0,0.5);
+}
+
+.btn-massive:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px rgba(0,0,0,0.5);
+}
